@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Inter", sans-serif;
+}
+
+main {
+    display: flex;
+}
+
+
+/* SIDE BAR */
+
+.side {
+    display: flex;
+    flex-direction: column;
+    width: 240px;
+    height: 100vh;
+}
+
+.side .top {
+    background-color: rgb(43, 45, 49);
+    width: 240px;
+    height: calc(100vh - 45px);
+}
+
+
+
+
+
+
+
+.side .user {
+    background-color: rgb(35, 36, 40);
+    height: 54px;
+    width: 240px;
+
+    display: flex;
+    align-items: center;
+}
+
+.side .user p {
+    color: rgb(214, 215, 217);
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.side .user p.statue {
+    font-size: 12px;
+    font-weight: 200;
+}
+
+.side .user img {
+    width: 32px;
+    height: 32px;
+
+    margin-left: 8px;
+
+    border-radius: 25px;
+    object-fit: cover;
+}
+
+.side .user .roue {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.side .user .roue img{
+    width: 25px;
+    height: 25px;
+}
+
+
+/* ROOM */
+.room {
+    background-color: rgb(49, 51, 56);
+    width: calc(100vw - 240px);
+}
