@@ -26,11 +26,133 @@ main {
     height: calc(100vh - 45px);
 }
 
+.side .top .search {
+    height: 48px;
+    width: 240px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-style: none;
+    border: none;
+    /* border-bottom: 1px solid; */
+    border-color: rgb(35, 36, 40);
+
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.side .top .search input:focus {
+    border: none;
+    outline: none;
+}
+.side .top .search input::placeholder {
+    font-weight: 580;
+}
+.side .top .search input {
+    width: 100%;
+    margin-left: 10px;
+    margin-right: 10px;
+
+    background-color: rgb(30, 31, 34);
+    color: whitesmoke;
+
+    border: none;
+    border-radius: 4px;
+
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 6px;
+    padding-right: 6px;
+}
+
+.side .top .friends {
+    width: 240px;
+}
+
+.side .top .friends .amis p {
+    margin-left: 10px;
+}
+
+.side .top .friends .amis {
+    margin-top: 8px;
+    margin-bottom: 8px;
+    margin-left: 8px;
+
+    padding-left: 10px;
+
+    height: 42px;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+
+    border-radius: 5px;
+
+    color: rgb(148, 155, 164);
+}
+
+.side .top .friends .amis:hover, .side .top .friendslist .friend:hover {
+    cursor: pointer;
+    background-color: rgb(54, 55, 61);
+}
+
+.side .top .friendslist {
+    color: rgb(148, 155, 164);
+    overflow: auto;
+    max-height: calc(100vh - 160px);
+}
+
+.side .top .friendslist::-webkit-scrollbar {
+    width: 1px;
+}
+
+.side .top .friendslist h1{
+    margin-left: 15px;
+    margin-top: 25px;
+    font-size: 12px;
+    font-weight: 650;
+    margin-bottom: 12px;
+
+    user-select: none;
+}
+
+.side .top .friendslist .friend {
+    display: flex;
+    align-items: center;
+
+    border-radius: 5px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+
+    margin-left: 8px;
+
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 5px;
+}
+.side .top .friendslist .friend .nomPseudo {
+    margin-left: 12px;
+    user-select: none;
+}
 
 
 
 
 
+/* USER */
+.side .user .info .pseudo {
+    display: flex;
+    flex-direction: column;
+
+    margin-left: 10px;
+}
+
+.side .user .info {
+    display: flex;
+    align-items: center;
+    
+}
 
 .side .user {
     background-color: rgb(35, 36, 40);
@@ -39,6 +161,8 @@ main {
 
     display: flex;
     align-items: center;
+
+    position: relative;
 }
 
 .side .user p {
@@ -52,7 +176,7 @@ main {
     font-weight: 200;
 }
 
-.side .user img {
+.side .user img,  .side .top .friendslist .friend img{
     width: 32px;
     height: 32px;
 
@@ -63,6 +187,8 @@ main {
 }
 
 .side .user .roue {
+    position: absolute;
+    right: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
